@@ -9,7 +9,7 @@ export const SITE = {
   phone: '+91 7355671043',
   email: 'sam1riddhi128@gmail.com',
   whatsapp: '917355671043',
-  address: '203, Wellness Tower, Andheri West, Mumbai – 400053',
+  address: 'Varanasi, Uttar Pradesh, India',
   mapUrl: 'https://maps.google.com/?q=Andheri+West+Mumbai',
   instagram: 'https://instagram.com/',
   facebook: 'https://facebook.com/',
@@ -219,11 +219,11 @@ export const FAQ_ITEMS = [
   },
   {
     question: 'Can I book a consultation online?',
-    answer: 'Yes! You can book clinic visits, video calls, voice calls, and chat consultations directly from our website. Online payment is accepted via UPI, cards, and net banking.',
+    answer: 'Yes! You can book video calls, voice calls, and chat consultations directly from our website.',
   },
   {
     question: 'Do you offer home visits?',
-    answer: 'Home visits are available within select areas of Mumbai for patients with limited mobility or post-surgery conditions. Please call or WhatsApp us to check availability in your area.',
+    answer: 'Home visits are not available',
   },
   {
     question: 'How many sessions will I need?',
@@ -231,7 +231,7 @@ export const FAQ_ITEMS = [
   },
   {
     question: 'What should I bring to my first appointment?',
-    answer: 'Wear comfortable clothing. Bring any X-rays, MRIs, or medical reports. For online consultations, upload reports while booking so we can review them beforehand.',
+    answer: 'Bring any X-rays, MRIs, or medical reports. For online consultations, upload reports while booking so we can review them beforehand.',
   },
   {
     question: 'Do you treat children and elderly patients?',
