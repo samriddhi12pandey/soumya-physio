@@ -5,6 +5,7 @@ import HeroSection from '@/components/sections/HeroSection'
 import StatsSection from '@/components/sections/StatsSection'
 import AboutSection from '@/components/sections/AboutSection'
 import ServicesSection from '@/components/sections/ServicesSection'
+import { SpecialtiesSlider } from '@/components/sections/SpecialtiesSlider' // 👈 Added the import here
 import WhyChooseUsSection from '@/components/sections/WhyChooseUsSection'
 import ProcessSection from '@/components/sections/ProcessSection'
 import TestimonialsSection from '@/components/sections/TestimonialsSection'
@@ -22,6 +23,9 @@ export default function Home() {
         <StatsSection />
         <AboutSection />
         <ServicesSection />
+        
+        <SpecialtiesSlider /> {/* 👈 Added right underneath ServicesSection */}
+        
         <WhyChooseUsSection />
         <ProcessSection />
         <TestimonialsSection />

@@ -46,6 +46,7 @@ export default {
       animation: {
         'fade-up': 'fadeUp 0.6s ease-out forwards',
         'fade-in': 'fadeIn 0.5s ease-out forwards',
+        'marquee': 'marquee 30s linear infinite', // 👈 Added smoothly here
       },
       keyframes: {
         fadeUp: {
@@ -55,6 +56,10 @@ export default {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
+        },
+        marquee: { // 👈 Added smoothly here
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
       },
     },
