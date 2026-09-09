@@ -172,11 +172,11 @@ export default function HeroSection() {
             <div className="relative w-full max-w-[460px]">
               <div className="relative aspect-[3/4] rounded-4xl overflow-hidden bg-gradient-to-br from-primary-100 via-teal-50 to-primary-50 shadow-hero border border-white">
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-8">
-                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary-200 to-teal-200 mb-4 flex items-center justify-center overflow-hidden p-3 shadow-md">
+                  <div className="w-36 h-36 rounded-full bg-white mb-4 flex items-center justify-center overflow-hidden p-4 shadow-md border border-primary-100/70">
                     <img
                       src={clinicLogo}
                       alt="Dr. Soumya Pandey Clinic"
-                      className="w-full h-full object-contain rounded-full"
+                      className="w-full h-full object-contain"
                     />
                   </div>
                   <div className="text-center">
