@@ -39,11 +39,11 @@ export default function AboutSection() {
             {/* Main image */}
             <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-primary-50 to-teal-50 aspect-[4/5] shadow-card border border-gray-100">
               <div className="absolute inset-0 flex flex-col items-center justify-center p-8">
-                <div className="w-44 h-44 rounded-full bg-white flex items-center justify-center mb-6 shadow-md border border-primary-100/80 p-4">
+                <div className="w-44 h-44 rounded-full bg-white flex items-center justify-center mb-6 shadow-md border border-primary-100/80 p-3 overflow-hidden">
                   <img 
                     src={clinicLogo} 
                     alt="Dr. Soumya Pandey Logo" 
-                    className="w-full h-full object-contain" 
+                    className="w-full h-full object-contain object-center scale-110 -translate-y-1" 
                   />
                 </div>
                 <div className="text-center">
@@ -180,11 +180,11 @@ export default function AboutSection() {
                 <X size={20} />
               </button>
 
-              <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-sm border border-primary-100/80 p-2.5">
+              <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-sm border border-primary-100/80 p-2 overflow-hidden">
                 <img 
                   src={clinicLogo} 
                   alt="Dr. Soumya Pandey Logo" 
-                  className="w-full h-full object-contain" 
+                  className="w-full h-full object-contain object-center scale-110 -translate-y-0.5" 
                 />
               </div>
 
