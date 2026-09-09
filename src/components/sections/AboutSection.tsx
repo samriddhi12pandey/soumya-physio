@@ -5,6 +5,8 @@ import SectionHeader from '@/components/ui/SectionHeader'
 
 // @ts-ignore
 import clinicLogo from './logo.png'
+// @ts-ignore
+import doctorPhoto from './doctor.jpeg'
 
 const credentials = [
   { icon: GraduationCap, text: 'BPT & MPT — Dual Physiotherapy Degrees' },
@@ -36,25 +38,23 @@ export default function AboutSection() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
             className="relative"
           >
-            {/* Main image */}
-            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-primary-50 to-teal-50 aspect-[4/5] shadow-card border border-gray-100">
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-8">
-                <div className="w-44 h-44 rounded-full bg-white flex items-center justify-center mb-6 shadow-md border border-primary-100/80 p-3 overflow-hidden">
-                  <img 
-                    src={clinicLogo} 
-                    alt="Dr. Soumya Pandey Logo" 
-                    className="w-full h-full object-contain object-center scale-110 -translate-y-1" 
-                  />
-                </div>
-                <div className="text-center">
-                  <p className="font-display font-bold text-heading text-xl">Dr. Soumya Pandey</p>
-                  <p className="text-primary-600 text-sm mt-1 font-medium">Consultant Physiotherapist</p>
-                  <p className="text-body text-xs mt-2">BPT · MPT · Diploma in Yoga & Health Science</p>
-                </div>
+            {/* Main portrait image */}
+            <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-card border border-gray-100 bg-slate-100">
+              <img 
+                src={doctorPhoto} 
+                alt="Dr. Soumya Pandey" 
+                className="w-full h-full object-cover object-top" 
+              />
+
+              {/* Bottom gradient overlay with text */}
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/90 via-slate-900/60 to-transparent pt-16 pb-6 px-6 text-center">
+                <p className="font-display font-bold text-white text-xl">Dr. Soumya Pandey</p>
+                <p className="text-teal-300 text-sm mt-0.5 font-medium">Consultant Physiotherapist</p>
+                <p className="text-slate-200 text-xs mt-1.5">BPT · MPT · Diploma in Yoga & Health Science</p>
               </div>
-              {/* Decorative */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-primary-100/50 rounded-bl-[60px]" />
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-teal-100/50 rounded-tr-[50px]" />
+
+              {/* Decorative corner accents */}
+              <div className="absolute top-0 right-0 w-28 h-28 bg-primary-500/10 rounded-bl-[50px] pointer-events-none" />
             </div>
 
             {/* Floating experience badge */}
