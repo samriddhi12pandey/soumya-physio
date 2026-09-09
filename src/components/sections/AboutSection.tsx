@@ -3,6 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { CheckCircle2, Award, GraduationCap, Users, Apple, Linkedin, X, ExternalLink } from 'lucide-react'
 import SectionHeader from '@/components/ui/SectionHeader'
 
+// @ts-ignore
+import clinicLogo from './logo.png'
+
 const credentials = [
   { icon: GraduationCap, text: 'BPT & MPT — Dual Physiotherapy Degrees' },
   { icon: Award, text: 'Diploma in Yoga' },
@@ -36,8 +39,12 @@ export default function AboutSection() {
             {/* Main image */}
             <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-primary-50 to-teal-50 aspect-[4/5] shadow-card border border-gray-100">
               <div className="absolute inset-0 flex flex-col items-center justify-center p-8">
-                <div className="w-40 h-40 rounded-full bg-gradient-to-br from-primary-200 to-teal-200 flex items-center justify-center mb-6 shadow-md">
-                  <span className="text-7xl">.img/logo.png</span>
+                <div className="w-40 h-40 rounded-full bg-gradient-to-br from-primary-200 to-teal-200 flex items-center justify-center mb-6 shadow-md overflow-hidden p-3">
+                  <img 
+                    src={clinicLogo} 
+                    alt="Dr. Soumya Pandey Logo" 
+                    className="w-full h-full object-contain rounded-full" 
+                  />
                 </div>
                 <div className="text-center">
                   <p className="font-display font-bold text-heading text-xl">Dr. Soumya Pandey</p>
@@ -173,8 +180,12 @@ export default function AboutSection() {
                 <X size={20} />
               </button>
 
-              <div className="w-16 h-16 rounded-full bg-primary-50 flex items-center justify-center mx-auto mb-4 text-3xl">
-                👩‍⚕️
+              <div className="w-16 h-16 rounded-full bg-primary-50 flex items-center justify-center mx-auto mb-4 overflow-hidden p-2">
+                <img 
+                  src={clinicLogo} 
+                  alt="Dr. Soumya Pandey Logo" 
+                  className="w-full h-full object-contain rounded-full" 
+                />
               </div>
 
               <h3 className="font-display font-bold text-xl text-heading mb-1">Connect with Dr. Soumya</h3>

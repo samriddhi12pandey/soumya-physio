@@ -1,6 +1,8 @@
 // ============================================================
 // SITE-WIDE CONSTANTS
 // ============================================================
+// @ts-ignore
+import clinicLogo from './logo.png';
 
 export const SITE = {
   name: 'Soumya Pandey',
@@ -91,7 +93,7 @@ export const CONDITIONS = [
 
 export const WHY_CHOOSE_US = [
   {
-    icon: '.img/logo.png',
+    icon: '🩺',
     title: 'Dual Qualified Expert',
     description: 'BPT & MPT degrees with certified yoga instruction. 8+ years of clinical experience across musculoskeletal and neurological conditions.',
   },
