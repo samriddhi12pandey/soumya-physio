@@ -29,13 +29,11 @@ const colorMap: Record<string, { card: string; icon: string }> = {
   },
 }
 
-const targetOrganizations = [
-  'IT Companies',
-  'Schools',
-  'Colleges',
-  'Banks',
-  'Offices',
-  'Coaching Institutes',
+const targetProfessionals = [
+  'IT & Software Professionals',
+  'Desk & Remote Workers',
+  'Bankers & Office Staff',
+  'Students & Faculty',
 ]
 
 export default function ServicesSection() {
@@ -52,7 +50,7 @@ export default function ServicesSection() {
           />
         </div>
 
-        {/* Existing 6 Services Grid */}
+        {/* 6 Core Clinical Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {SERVICES.map((service, index) => {
             const colors = colorMap[service.color] ?? {
@@ -69,19 +67,16 @@ export default function ServicesSection() {
                 transition={{ duration: 0.5, delay: index * 0.08 }}
                 className={`group bg-white rounded-3xl border border-gray-100 p-6 md:p-7 shadow-card transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 ${colors.card}`}
               >
-                {/* Icon */}
                 <div
                   className={`w-14 h-14 ${colors.icon} rounded-2xl flex items-center justify-center text-3xl mb-5 transition-transform duration-300 group-hover:scale-110`}
                 >
                   {service.icon}
                 </div>
 
-                {/* Title */}
                 <h3 className="font-display font-bold text-heading text-lg mb-3 group-hover:text-primary-700 transition-colors">
                   {service.title}
                 </h3>
 
-                {/* Description */}
                 <p className="text-body text-sm leading-relaxed">
                   {service.description}
                 </p>
@@ -90,7 +85,7 @@ export default function ServicesSection() {
           })}
         </div>
 
-        {/* Full-width Corporate & Institutional Wellness Feature Banner */}
+        {/* Desk Strain & Ergonomic Posture Care Feature */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -101,21 +96,21 @@ export default function ServicesSection() {
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-100/80 text-teal-800 text-xs font-semibold uppercase tracking-wider mb-4">
-                <span>🏢</span> Corporate & Institutional Solutions
+                <span>💻</span> Ergonomics & Desk-Bound Care
               </div>
 
               <h3 className="font-display font-bold text-heading text-2xl md:text-3xl mb-3">
-                Corporate Wellness Programs
+                Corporate & Desk Strain Relief
               </h3>
 
               <p className="text-body text-sm md:text-base leading-relaxed mb-5">
-                Specialized workplace ergonomics, posture correction workshops, screen-fatigue relief, and guided therapeutic wellness sessions tailored to keep teams and students active, pain-free, and energized.
+                Targeted physical rehabilitation for pain caused by prolonged sitting, screen time, and poor workstation habits. We treat neck stiffness, lower back compression, tech neck, and repetitive strain injuries (RSI) with personalized posture realignment and therapeutic mobility.
               </p>
 
-              {/* Target sectors */}
+              {/* Patient groups affected */}
               <div className="flex flex-wrap items-center gap-2">
-                <span className="text-xs font-medium text-gray-500 mr-1">Programs designed for:</span>
-                {targetOrganizations.map((item) => (
+                <span className="text-xs font-medium text-gray-500 mr-1">Commonly treating:</span>
+                {targetProfessionals.map((item) => (
                   <span
                     key={item}
                     className="inline-flex items-center px-3 py-1 rounded-xl bg-white border border-teal-100 text-teal-900 text-xs font-medium shadow-sm"
@@ -126,18 +121,18 @@ export default function ServicesSection() {
               </div>
             </div>
 
-            {/* Action Button */}
+            {/* Direct Booking CTA */}
             <div className="w-full lg:w-auto flex flex-col sm:flex-row lg:flex-col items-stretch sm:items-center lg:items-end gap-2.5 flex-shrink-0">
               <a
-                href="https://wa.me/917355671043?text=Hi%20Dr.%20Soumya,%20we%20are%20interested%20in%20a%20Corporate%20/%20Institutional%20Wellness%20program"
+                href="https://wa.me/917355671043?text=Hi%20Dr.%20Soumya,%20I%20am%20facing%20posture%20and%20desk%20sitting%20pain%20and%20would%20like%20to%20book%20a%20consultation"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 py-3.5 rounded-2xl bg-teal-600 hover:bg-teal-700 text-white font-medium text-sm transition-all duration-200 shadow-md hover:shadow-lg text-center"
               >
-                Inquire for Your Organization →
+                Consult for Posture Pain →
               </a>
               <span className="text-xs text-gray-500 text-center lg:text-right">
-                On-site workshops & online ergonomic audits
+                In-clinic & online ergonomics consultations
               </span>
             </div>
           </div>
