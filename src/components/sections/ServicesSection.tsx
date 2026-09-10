@@ -100,7 +100,7 @@ export default function ServicesSection() {
               </div>
 
               <h3 className="font-display font-bold text-heading text-2xl md:text-3xl mb-3">
-                Corporate & Desk Strain Relief
+                Corporate Wellness
               </h3>
 
               <p className="text-body text-sm md:text-base leading-relaxed mb-5">
