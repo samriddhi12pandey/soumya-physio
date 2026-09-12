@@ -2,8 +2,6 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ArrowRight, CalendarDays, CheckCircle2, Star } from 'lucide-react'
 
-// @ts-ignore
-import clinicLogo from './logo.png'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -166,22 +164,22 @@ export default function HeroSection() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="relative hidden lg:flex items-center justify-center"
+            className="relative flex items-center justify-center mt-4 sm:mt-6 lg:mt-0 px-1 sm:px-0"
           >
             {/* Main Image Card */}
-            <div className="relative w-full max-w-[460px]">
-              <div className="relative aspect-[3/4] rounded-4xl overflow-hidden bg-gradient-to-br from-primary-100 via-teal-50 to-primary-50 shadow-hero border border-white">
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-8">
-                  <div className="w-36 h-36 rounded-full bg-white mb-4 flex items-center justify-center overflow-hidden p-2.5 shadow-md border border-primary-100/80">
+            <div className="relative w-full max-w-[460px] mx-auto pb-8 sm:pb-10">
+              <div className="relative aspect-[4/5] sm:aspect-[3/4] w-full max-w-[420px] mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-gradient-to-br from-primary-100 via-teal-50 to-primary-50 shadow-hero border border-white">
+                <div className="absolute inset-0 flex flex-col items-center justify-center px-5 py-8 sm:p-8">
+                  <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-white mb-4 flex items-center justify-center overflow-hidden p-2.5 shadow-md border border-primary-100/80">
                     <img
-                      src={clinicLogo}
-                      alt="Dr. Soumya Pandey Clinic"
+                      src="/doctor.jpeg"
+                      alt="Dr. Soumya Pandey"
                       className="w-full h-full object-contain object-center scale-110 -translate-y-1"
                     />
                   </div>
                   <div className="text-center">
                     <p className="font-display font-bold text-primary-900 text-lg">Dr. Soumya Pandey</p>
-                    <p className="text-primary-600 text-sm mt-1">Physiotherapist & Nutrition Expert</p>
+                    <p className="text-primary-600 text-xs sm:text-sm mt-1">Physiotherapist & Nutrition Expert</p>
                     <div className="mt-3 flex justify-center gap-1">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} size={14} className="text-amber-400 fill-amber-400" />
@@ -198,7 +196,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.7, duration: 0.5 }}
-                className="absolute -left-10 top-16 bg-white rounded-2xl p-4 shadow-card-hover border border-gray-100"
+                className="hidden sm:block absolute left-2 md:-left-8 lg:-left-10 top-10 md:top-14 lg:top-16 bg-white rounded-2xl p-3 sm:p-4 shadow-card-hover border border-gray-100"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-primary-50 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -215,7 +213,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0, x: 30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.8, duration: 0.5 }}
-                className="absolute -right-8 bottom-24 bg-white rounded-2xl p-4 shadow-card-hover border border-gray-100"
+                className="absolute right-1 sm:-right-6 lg:-right-8 bottom-14 sm:bottom-20 lg:bottom-24 bg-white rounded-2xl p-3 sm:p-4 shadow-card-hover border border-gray-100"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-amber-50 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -232,10 +230,10 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9, duration: 0.5 }}
-                className="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-white rounded-2xl px-5 py-3 shadow-card-hover border border-gray-100 flex items-center gap-3 whitespace-nowrap"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[calc(100%-24px)] sm:w-auto max-w-[300px] sm:max-w-none bg-white rounded-2xl px-4 sm:px-5 py-3 shadow-card-hover border border-gray-100 flex items-center justify-center gap-3 text-center"
               >
                 <span className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse flex-shrink-0" />
-                <span className="text-heading font-semibold text-sm">Available for Online Consultation</span>
+                <span className="text-heading font-semibold text-xs sm:text-sm leading-snug">Available for Online Consultation</span>
               </motion.div>
             </div>
           </motion.div>

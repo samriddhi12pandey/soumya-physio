@@ -124,7 +124,7 @@ export default function ServicesSection() {
             {/* Direct Booking CTA */}
             <div className="w-full lg:w-auto flex flex-col sm:flex-row lg:flex-col items-stretch sm:items-center lg:items-end gap-2.5 flex-shrink-0">
               <a
-                href="https://wa.me/917355671043?text=Hi%20Dr.%20Soumya,%20I%20am%20facing%20posture%20and%20desk%20sitting%20pain%20and%20would%20like%20to%20book%20a%20consultation"
+                href="https://wa.me/919151512622?text=Hi%20Dr.%20Soumya,%20I%20am%20facing%20posture%20and%20desk%20sitting%20pain%20and%20would%20like%20to%20book%20a%20consultation"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 py-3.5 rounded-2xl bg-teal-600 hover:bg-teal-700 text-white font-medium text-sm transition-all duration-200 shadow-md hover:shadow-lg text-center"

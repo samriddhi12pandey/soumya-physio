@@ -46,8 +46,12 @@ export default function Navbar() {
               className="flex items-center gap-3 group"
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
-              <div className="w-10 h-10 bg-gradient-to-br from-primary-700 to-secondary rounded-2xl flex items-center justify-center shadow-md group-hover:shadow-button transition-shadow duration-200">
-                <span className="text-white font-display font-bold text-base tracking-tight">SP</span>
+              <div className="w-10 h-10 rounded-2xl bg-white flex items-center justify-center shadow-md border border-primary-100 overflow-hidden group-hover:shadow-button transition-shadow duration-200">
+                <img
+                  src="/logo.png"
+                  alt="Soumya Pandey Physiotherapy & Wellness"
+                  className="w-full h-full object-contain p-1"
+                />
               </div>
               <div className="hidden sm:block">
                 <p className="font-display font-bold text-heading text-sm leading-tight">Soumya Pandey</p>
@@ -117,8 +121,12 @@ export default function Navbar() {
               {/* Mobile Header */}
               <div className="flex items-center justify-between p-5 border-b border-gray-100">
                 <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 bg-gradient-to-br from-primary-700 to-secondary rounded-xl flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">SP</span>
+                  <div className="w-9 h-9 rounded-xl bg-white flex items-center justify-center border border-primary-100 overflow-hidden">
+                    <img
+                      src="/logo.png"
+                      alt="Soumya Pandey Physiotherapy & Wellness"
+                      className="w-full h-full object-contain p-1"
+                    />
                   </div>
                   <div>
                     <p className="font-display font-bold text-heading text-sm">Soumya Pandey</p>

@@ -3,10 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { CheckCircle2, Award, GraduationCap, Users, Apple, Linkedin, X, ExternalLink } from 'lucide-react'
 import SectionHeader from '@/components/ui/SectionHeader'
 
-// @ts-ignore
-import clinicLogo from './logo.png'
-// @ts-ignore
-import doctorPhoto from './doctor.jpeg'
 
 const credentials = [
   { icon: GraduationCap, text: 'BPT & MPT — Dual Physiotherapy Degrees' },
@@ -41,7 +37,7 @@ export default function AboutSection() {
             {/* Main portrait image */}
             <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-card border border-gray-100 bg-slate-100">
               <img 
-                src={doctorPhoto} 
+                src="/doctor.jpeg" 
                 alt="Dr. Soumya Pandey" 
                 className="w-full h-full object-cover object-top" 
               />
@@ -182,7 +178,7 @@ export default function AboutSection() {
 
               <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-sm border border-primary-100/80 p-2 overflow-hidden">
                 <img 
-                  src={clinicLogo} 
+                  src="/logo.png" 
                   alt="Dr. Soumya Pandey Logo" 
                   className="w-full h-full object-contain object-center scale-110 -translate-y-0.5" 
                 />

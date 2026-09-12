@@ -110,7 +110,7 @@ export default function ScheduleAppointment() {
       `*Preferred Channel:* ${preferredChannel.toUpperCase()}`
 
     if (preferredChannel === 'whatsapp') {
-      const waUrl = `https://wa.me/917355671043?text=${message}`
+      const waUrl = `https://wa.me/919151512622?text=${message}`
       window.open(waUrl, '_blank')
     } else {
       const mailtoUrl = `mailto:drsoumyapandey@gmail.com?subject=New Appointment Booking - ${name}&body=${message.replace(/%0A/g, '\n')}`

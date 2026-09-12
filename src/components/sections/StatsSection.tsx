@@ -32,7 +32,7 @@ export default function StatsSection() {
   return (
     <section className="relative -mt-6 z-10 px-4 md:px-8 lg:px-16 pb-4">
       <div className="container-max">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.id}
@@ -42,7 +42,7 @@ export default function StatsSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div
-                className={`relative overflow-hidden bg-gradient-to-br ${stat.bg} rounded-3xl p-6 text-white shadow-hero h-full flex flex-col justify-between`}
+                className={`relative overflow-hidden bg-gradient-to-br ${stat.bg} rounded-3xl p-5 sm:p-6 text-white shadow-hero min-h-[150px] sm:min-h-[170px] h-full flex flex-col justify-between`}
               >
                 {/* Background circle decoration */}
                 <div className="absolute -right-6 -top-6 w-28 h-28 rounded-full bg-white/10" />
@@ -50,7 +50,7 @@ export default function StatsSection() {
 
                 <div className="relative">
                   <div className="flex items-center justify-between mb-2">
-                    <p className="font-display font-extrabold text-5xl leading-none">
+                    <p className="font-display font-extrabold text-4xl sm:text-5xl leading-none">
                       {stat.value}
                     </p>
                     {stat.customIcon && (
